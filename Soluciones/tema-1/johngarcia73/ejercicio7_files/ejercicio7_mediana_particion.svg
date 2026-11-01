@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="330" viewBox="0 0 780 330">
+<rect width="780" height="330" fill="white"/><style>text{font-family:Arial,sans-serif;fill:#222}.left{fill:#dcfce7;stroke:#15803d;stroke-width:2}.right{fill:#ffedd5;stroke:#c2410c;stroke-width:2}.num{font-size:20px;text-anchor:middle;dominant-baseline:middle}.label{font-size:19px;font-weight:bold}.small{font-size:16px}</style>
+<text x="390" y="32" text-anchor="middle" font-size="22" font-weight="bold">Partición válida de dos arreglos ordenados (n = 6)</text>
+<text class="label" x="38" y="112">A</text><text class="label" x="38" y="202">B</text>
+<g transform="translate(90,72)">
+<g><rect class="left" x="0" y="0" width="82" height="52" rx="5"/><rect class="left" x="88" y="0" width="82" height="52" rx="5"/><rect class="left" x="176" y="0" width="82" height="52" rx="5"/><rect class="right" x="270" y="0" width="82" height="52" rx="5"/><rect class="right" x="358" y="0" width="82" height="52" rx="5"/><rect class="right" x="446" y="0" width="82" height="52" rx="5"/>
+<rect class="left" x="0" y="90" width="82" height="52" rx="5"/><rect class="left" x="88" y="90" width="82" height="52" rx="5"/><rect class="left" x="176" y="90" width="82" height="52" rx="5"/><rect class="right" x="270" y="90" width="82" height="52" rx="5"/><rect class="right" x="358" y="90" width="82" height="52" rx="5"/><rect class="right" x="446" y="90" width="82" height="52" rx="5"/></g>
+<g class="num"><text x="41" y="26">1</text><text x="129" y="26">4</text><text x="217" y="26">7</text><text x="311" y="26">10</text><text x="399" y="26">13</text><text x="487" y="26">16</text><text x="41" y="116">2</text><text x="129" y="116">3</text><text x="217" y="116">5</text><text x="311" y="116">8</text><text x="399" y="116">11</text><text x="487" y="116">14</text></g>
+<path d="M264 -13 V158" stroke="#1d4ed8" stroke-width="3" stroke-dasharray="7 5"/><text x="264" y="-22" text-anchor="middle" font-size="16" fill="#1d4ed8">Corte</text>
+</g>
+<text x="390" y="265" text-anchor="middle" class="small">Izquierda: i = 3, j = 3 (seis elementos)</text><text x="390" y="291" text-anchor="middle" class="small">Aᵢ = 7 ≤ Bⱼ₊₁ = 8  y  Bⱼ = 5 ≤ Aᵢ₊₁ = 10</text><text x="390" y="316" text-anchor="middle" font-size="14" fill="#555">El máximo de la izquierda, 7, es el sexto menor de la unión.</text>
+</svg>

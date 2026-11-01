@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-labelledby="title desc">
+<title id="title">Pila aumentada con mínimo de prefijo</title>
+<desc id="desc">Pila construida insertando 4, 2, 5, 1. Cada entrada almacena el valor y el mínimo del prefijo: (1,1), (5,2), (2,2), (4,4).</desc>
+<style>
+ text { font-family: Arial, Helvetica, sans-serif; fill: #263238; }
+ .head { font-size: 15px; font-weight: 700; fill: #59636e; }
+ .value { font-size: 20px; font-weight: 700; text-anchor: middle; }
+ .note { font-size: 16px; }
+ .small { font-size: 13px; fill: #59636e; }
+</style>
+<text x="215" y="27" text-anchor="middle" font-size="19" font-weight="700">Cima de la pila</text>
+<path d="M215 35 L215 51" stroke="#176B87" stroke-width="3" fill="none"/>
+<path d="M208 45 L215 54 L222 45" stroke="#176B87" stroke-width="3" fill="none"/>
+<text class="head" x="154" y="70" text-anchor="middle">valor</text>
+<text class="head" x="282" y="70" text-anchor="middle">mínimo del prefijo</text>
+<g>
+  <rect x="95" y="82" width="245" height="43" rx="6" fill="#eaf4f7" stroke="#176B87" stroke-width="2"/><text class="value" x="154" y="110">1</text><text class="value" x="282" y="110">1</text>
+  <rect x="95" y="130" width="245" height="43" rx="6" fill="#eaf4f7" stroke="#176B87" stroke-width="2"/><text class="value" x="154" y="158">5</text><text class="value" x="282" y="158">2</text>
+  <rect x="95" y="178" width="245" height="43" rx="6" fill="#eaf4f7" stroke="#176B87" stroke-width="2"/><text class="value" x="154" y="206">2</text><text class="value" x="282" y="206">2</text>
+  <rect x="95" y="226" width="245" height="43" rx="6" fill="#eaf4f7" stroke="#176B87" stroke-width="2"/><text class="value" x="154" y="254">4</text><text class="value" x="282" y="254">4</text>
+</g>
+<path d="M362 103 L430 103" stroke="#24856B" stroke-width="3" fill="none"/><path d="M421 96 L432 103 L421 110" stroke="#24856B" stroke-width="3" fill="none"/>
+<text x="450" y="91" font-size="18" font-weight="700" fill="#24856B">minimo()</text>
+<text class="note" x="450" y="119">devuelve 1 leyendo la cima.</text>
+<path d="M362 151 L430 151" stroke="#c77924" stroke-width="3" fill="none"/><path d="M421 144 L432 151 L421 158" stroke="#c77924" stroke-width="3" fill="none"/>
+<text x="450" y="148" font-size="16" font-weight="700" fill="#c77924">Tras pop()</text>
+<text class="note" x="450" y="174">la nueva cima almacena mínimo 2.</text>
+<text class="small" x="95" y="291">Pares almacenados tras insertar, en ese orden, 4, 2, 5, 1.</text>
+</svg>

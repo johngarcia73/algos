@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="440" viewBox="0 0 1100 440" role="img" aria-labelledby="title desc">
+  <title id="title">Lista enlazada con cola y ciclo: algoritmo de Floyd</title>
+  <desc id="desc">La lista tiene una cola que conduce al ciclo. El puntero lento avanza un enlace por iteración y el rápido avanza dos.</desc>
+  <defs>
+    <marker id="arrGray" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#59636e"/></marker>
+    <marker id="arrBlue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#176b87"/></marker>
+    <style>
+      .node{fill:#eaf4f7;stroke:#176b87;stroke-width:3}.tail{fill:#f2f4f6;stroke:#68737d;stroke-width:2}.txt{font:bold 22px sans-serif;fill:#263238;text-anchor:middle;dominant-baseline:middle}.title{font:bold 27px sans-serif;fill:#176b87}.small{font:19px sans-serif;fill:#59636e}.edge{fill:none;stroke:#59636e;stroke-width:3;marker-end:url(#arrGray)}.cycle{fill:none;stroke:#176b87;stroke-width:3;marker-end:url(#arrBlue)}
+    </style>
+  </defs>
+  <text x="50" y="50" class="title">Lista con cola de longitud μ y ciclo de longitud λ</text>
+  <g>
+    <circle class="tail" cx="105" cy="215" r="33"/><text class="txt" x="105" y="215">u₀</text>
+    <circle class="tail" cx="230" cy="215" r="33"/><text class="txt" x="230" y="215">u₁</text>
+    <circle class="node" cx="390" cy="215" r="33"/><text class="txt" x="390" y="215">c₀</text>
+    <circle class="node" cx="550" cy="110" r="33"/><text class="txt" x="550" y="110">c₁</text>
+    <circle class="node" cx="730" cy="215" r="33"/><text class="txt" x="730" y="215">c₂</text>
+    <circle class="node" cx="550" cy="320" r="33"/><text class="txt" x="550" y="320">c₃</text>
+    <path class="edge" d="M138 215 L194 215"/>
+    <path class="edge" d="M263 215 L354 215"/>
+    <path class="cycle" d="M416 195 L526 123"/>
+    <path class="cycle" d="M583 117 L700 195"/>
+    <path class="cycle" d="M730 249 L579 306"/>
+    <path class="cycle" d="M520 307 L402 245"/>
+    <text class="small" x="170" y="282" text-anchor="middle">cola: μ nodos</text>
+    <text class="small" x="610" y="45" text-anchor="middle">ciclo: λ nodos</text>
+  </g>
+  <g transform="translate(70,385)">
+    <circle cx="0" cy="0" r="8" fill="#24856b"/><text class="small" x="18" y="7">slow: 1 enlace por iteración</text>
+    <circle cx="400" cy="0" r="8" fill="#b64b4b"/><text class="small" x="418" y="7">fast: 2 enlaces por iteración</text>
+  </g>
+  <text x="870" y="160" class="small">Una vez dentro</text>
+  <text x="870" y="188" class="small">del ciclo, fast gana</text>
+  <text x="870" y="216" class="small">una posición por</text>
+  <text x="870" y="244" class="small">iteración respecto</text>
+  <text x="870" y="272" class="small">de slow.</text>
+</svg>

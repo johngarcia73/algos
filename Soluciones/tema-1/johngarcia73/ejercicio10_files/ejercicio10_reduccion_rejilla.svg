@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="360" viewBox="0 0 1100 360" role="img" aria-labelledby="t d">
+<title id="t">Reducción desde distinción de elementos y rejilla de intervalos</title>
+<desc id="d">A la izquierda, dos valores iguales corresponden a puntos coincidentes y distancia cero. A la derecha, una rejilla de intervalos de longitud h igual a delta sobre dos, con cinco intervalos consultados alrededor del intervalo k.</desc>
+<defs>
+ <style>
+ .txt{font-family:Arial,Helvetica,sans-serif;fill:#243447}.head{font-size:20px;font-weight:700}.body{font-size:16px}.tiny{font-size:14px;fill:#667586}
+ .axis{stroke:#718096;stroke-width:2}.blue{fill:#32658a}.green{fill:#21835b}.red{fill:#b44343}.grid{stroke:#b7c2cd;stroke-width:1.5}
+ </style>
+ <marker id="axisarr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L7 4 L0 8" fill="none" stroke="#718096" stroke-width="1.4"/></marker>
+</defs>
+<rect x="1" y="1" width="1098" height="358" rx="16" fill="#fff" stroke="#d7dee7"/>
+<line x1="550" y1="26" x2="550" y2="334" stroke="#d4dce5" stroke-dasharray="6 6"/>
+<!-- Left panel -->
+<text x="275" y="42" class="txt head" text-anchor="middle" fill="#32658a">(a) Reducción: igualdad ↔ distancia cero</text>
+<line x1="70" y1="157" x2="482" y2="157" class="axis" marker-end="url(#axisarr)"/>
+<circle cx="132" cy="157" r="7" class="blue"/><text x="132" y="132" class="txt body" text-anchor="middle">x₁</text>
+<circle cx="268" cy="153" r="8" class="blue"/><circle cx="268" cy="161" r="5" class="red"/>
+<text x="268" y="119" class="txt body" text-anchor="middle">x₂ = x₄</text>
+<circle cx="410" cy="157" r="7" class="blue"/><text x="410" y="132" class="txt body" text-anchor="middle">x₃</text>
+<path d="M268 174 v38" stroke="#b44343" stroke-width="2.2"/><path d="M260 204 l8 10 8 -10" fill="none" stroke="#b44343" stroke-width="2.2"/>
+<text x="285" y="234" class="txt body" fill="#a52d2d">distancia = 0</text>
+<rect x="90" y="267" width="370" height="48" rx="10" fill="#eef5fb" stroke="#32658a"/>
+<text x="275" y="297" class="txt body" text-anchor="middle">Transformación: xᵢ ↦ pᵢ = xᵢ</text>
+<!-- Right panel -->
+<text x="825" y="42" class="txt head" text-anchor="middle" fill="#21835b">(b) Rejilla en la recta</text>
+<text x="825" y="76" class="txt body" text-anchor="middle">h = δ/2</text>
+<!-- five queried cells among seven -->
+<g transform="translate(596 108)">
+ <rect x="0" y="0" width="70" height="94" fill="#fff3f3" stroke="#b44343" stroke-width="2"/>
+ <rect x="70" y="0" width="70" height="94" fill="#fff3f3" stroke="#b44343" stroke-width="2"/>
+ <rect x="140" y="0" width="70" height="94" fill="#fff3f3" stroke="#b44343" stroke-width="2"/>
+ <rect x="210" y="0" width="70" height="94" fill="#fff3f3" stroke="#b44343" stroke-width="2"/>
+ <rect x="280" y="0" width="70" height="94" fill="#fff3f3" stroke="#b44343" stroke-width="2"/>
+ <rect x="350" y="0" width="70" height="94" fill="#f5f7fa" stroke="#b7c2cd"/>
+ <rect x="420" y="0" width="70" height="94" fill="#f5f7fa" stroke="#b7c2cd"/>
+ <g class="txt tiny" text-anchor="middle">
+  <text x="35" y="119">Iₖ₋₂</text><text x="105" y="119">Iₖ₋₁</text><text x="175" y="119">Iₖ</text><text x="245" y="119">Iₖ₊₁</text><text x="315" y="119">Iₖ₊₂</text><text x="385" y="119">Iₖ₊₃</text><text x="455" y="119">Iₖ₊₄</text>
+ </g>
+ <circle cx="175" cy="48" r="7" class="green"/>
+ <circle cx="245" cy="26" r="7" class="red"/>
+ <path d="M245 37 L245 66" stroke="#b44343" stroke-width="2" stroke-dasharray="4 3"/>
+</g>
+<text x="840" y="284" class="txt body" text-anchor="middle" fill="#a52d2d">Consultar Iₖ₋₂, …, Iₖ₊₂</text>
+<text x="840" y="315" class="txt tiny" text-anchor="middle">Cinco intervalos bastan para detectar</text>
+<text x="840" y="335" class="txt tiny" text-anchor="middle">un punto a distancia menor que δ</text>
+</svg>
